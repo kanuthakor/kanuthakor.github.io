@@ -1,0 +1,38 @@
+/* mobile friendly */
+
+@media screen and (max-width: 799px) {
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 3rem;
+  }
+  .side {
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+}
+
+/* Desktop Friendly */
+
+@media screen and (min-width: 800px) {
+  .content {
+    align-items: center;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 4rem;
+  }
+  .side {
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 20rem;
+    margin-left: 4rem;
+    order: 2;
+    width: 20rem;
+  }
+  .about {
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+}
+
